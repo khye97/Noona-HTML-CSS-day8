@@ -115,27 +115,64 @@ a {
   margin-top: 15px;
 }
 
+/* footer */
 footer {
   background-color: #5f0080;
   color: #fff;
 }
 
-.footer-desktop a {
+.footer-container {
+  padding: 100px;
+}
+
+.footer-container a {
   text-decoration: none;
   color: #fff;
 }
 
-footer.footer-mobile {
-  display: none;
-}
-
-footer .first-line {
+.footer-container .first-line {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer-desktop .sns-box img{
+.footer-container .first-line .footer-logo {
+  width: 20%;
+}
+
+.footer-container .first-line .menus {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.footer-container .second-line {
+  display: flex;
+  padding-top: 50px;
+}
+
+.footer-container .second-line .customer-service {
+  width: 70%;
+}
+
+.footer-container .second-line .sns-area {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container .second-line .sns-area a {
+  margin-right: 20px;
+}
+
+.footer-container .second-line .sns-area a:last-child {
+  margin-right: 0;
+}
+
+.footer-container .second-line .sns-area img {
   width: 50px;
-  margin: 0 15px;
 }
 
 /* 모바일 ------------------------------------- */
@@ -170,26 +207,47 @@ footer .first-line {
     display: block;
   }
 
-  footer.footer-desktop {
-    display: none;
+  /* footer */
+  .footer-container {
+    padding: 80px 20px;
   }
 
-  footer.footer-mobile {
+  .footer-container .first-line {
     display: block;
   }
 
-  footer.footer-mobile .first-line {
-    border: none;
+  .footer-container .first-line .footer-logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
-  footer.footer-mobile .icon {
-    width: 50px;
+  .footer-container .first-line .menus {
+    width: 100%;
+    display: block;
+    text-align: center;
+    
   }
 
-  .footer-mobile a {
-    text-decoration: none;
-    color: #fff;
+  .footer-container .first-line .menus a {
+    display: block;
+    margin-bottom: 15px;
   }
 
+  .footer-container .second-line {
+    display: block;
+  }
+  
+  .footer-container .second-line .customer-service {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .footer-container .second-line .sns-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
 }
